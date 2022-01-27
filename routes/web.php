@@ -30,11 +30,14 @@ use Illuminate\Support\Facades\Route;
 //});
 
 Route::get('/', function () {
-  return view('home');
+  return view('home', [
+     "title" => "Home"
+  ]);
 });
 
 Route::get('/about', function () {
    return view('about', [
+      "title" => "About",
       "nama" => "Syafira Luthfi Masayu",
       "email" => "3103120214@student.smktelkom-pwt.sch.id",
       "gambar" => "images.jpeg"
@@ -42,7 +45,15 @@ Route::get('/about', function () {
 });
 
 Route::get('/gallery', function () {
-   return view('Gallery');
+   return view('gallery', [
+      "title" => "Gallery"
+   ]);
+});
+
+Route::get('/contacts', function () {
+   return view('contacts', [
+      "title" => "Contacts"
+   ]);
 });
 
 
