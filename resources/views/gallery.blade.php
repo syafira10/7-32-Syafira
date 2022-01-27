@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Syafira Gallery</title>
-</head>
-<body>
-    <h1> Halaman Gallery </h1>
-</body>
-</html>
+@extends('layouts.main')
+
+@section('container')
+    <h1>Halaman Gallery</h1>
+<//img src="images/foto1.jpg" width="200px">
+<//img src="images/foto2.jpg" width="200px">
+<//img src="images/foto3.jpg" width="200px">
+<//img src="images/foto4.jpg" width="200px">
+
+
+@endsection
