@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ContactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,18 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 //Route::get('/', function () {
 //   return view('welcome');
-//});
-
-//Route::get('/', function () {
-//   return 'Halaman home';
-//});
-
-//Route::get('/about', function () {
-//   return 'Halaman About';
-//});
-
-//Route::get('/gallery', function () {
-//  return 'Halaman Gallery';
 //});
 
 Route::get('/', function () {
@@ -50,11 +38,9 @@ Route::get('/gallery', function () {
    ]);
 });
 
-Route::get('/contacts', function () {
-   return view('contacts', [
-      "title" => "Contacts"
-   ]);
-});
+Route::resource('/contacts', ContactController::class);
+
+
 
 
 
