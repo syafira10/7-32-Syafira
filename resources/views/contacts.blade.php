@@ -19,6 +19,7 @@
             <label for="floatingTextarea2">Pesan</label>
         </div>
         <button type="submit" class="btn btn-primary">Kirim</button>
+    
 </form>
 
 @endsection
